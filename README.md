@@ -5,7 +5,7 @@ This project demonstrates how to use SQL for data preprocessing and feature engi
 
 ## Data
 
-The data used in this project is simulated network traffic data from an enterprise network. It includes features such as source/destination IP, port, protocol, and timestamps.
+The data used in this project is simulated network traffic data from an enterprise network. It includes features such as source/destination IP, port, protocol, and timestamps. If you want to download the data here is the link for it. "https://unsw-my.sharepoint.com/:f:/g/personal/z5025758_ad_unsw_edu_au/EnuQZZn3XuNBjgfcUu4DIVMBLCHyoLHqOswirpOQifr1ag?e=gKWkLS"
 
 ## SQL Scripts
 
