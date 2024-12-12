@@ -14,12 +14,12 @@ y = data[data.columns[10]]              # Select the 11th column (index 10)
 # --- Feature Encoding ---
 
 # One-Hot Encoding for categorical features
-categorical_features = [X.columns[4], X.columns[5], X.columns[13]]  # Use column indices for categorical features
+categorical_features = [X.columns[4], X.columns[5], X.columns[13]]  # Get column names
 encoder = OneHotEncoder(handle_unknown='ignore', sparse_output=False)
-encoded_features = encoder.fit_transform(X.iloc[:, categorical_features])  # Encode using column indices
+encoded_features = encoder.fit_transform(X[categorical_features])  # Use column names directly
 encoded_df = pd.DataFrame(encoded_features)
 X = pd.concat([X, encoded_df], axis=1)
-X.drop(X.columns[categorical_features], axis=1, inplace=True)  # Drop original columns using indices
+X.drop(categorical_features, axis=1, inplace=True)  # Drop original columns
 
 # Label Encoding for the target variable
 label_encoder = LabelEncoder()
